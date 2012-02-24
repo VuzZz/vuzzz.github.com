@@ -73,7 +73,7 @@ td { vertical-align: top; }
    Author: Jonathan Verrecchia - verekia.com/initializr/responsive-template
    ========================================================================== */
 
-body{ font:16px/26px Helvetica, Helvetica Neue, Arial; }
+body{ font:16px/26px Helvetica, Helvetica Neue, Arial; min-width:1366px}
 
 .wrapper{
 	width:90%;
@@ -185,7 +185,7 @@ nav a:hover{
 
 header {
     margin-bottom:80px;
-    text-shadow:1px 1px 2px #8F8F8F
+    text-shadow:1px 1px 2px #c2c2c2
 }
 
 header img {
@@ -214,13 +214,17 @@ header img {
 }
 
 #main section {
-    text-shadow:1px 1px 2px #8F8F8F;
     font-family: "facitweb-1","facitweb-2", Helvetica, arial, sans-serif;
+    font-size:14px;
 }
 
 #main footer {
     text-shadow:1px 1px 2px #8F8F8F;
     font-family: "facitweb-1","facitweb-2", Helvetica, arial, sans-serif;
+}
+
+aside {
+    margin-top:200px;
 }
 
 aside h3 {
@@ -234,12 +238,12 @@ footer {
 }
 
 footer h3 {
-    font-size:16px;
+    font-size:15px;
     margin: 5px 0 0 5px;
 }
 
 footer section p {
-    font-size:14px;
+    font-size:13px;
     line-height:17px;
     margin: 5px 5px 0px 5px;
 }
@@ -254,6 +258,22 @@ footer section {
     color:white;
 }
 
+footer section a {
+	color:white;
+	font-weight:bold;
+	text-decoration:none;
+}
+
+footer section a:hover {
+	text-decoration:underline;
+	color:white;
+}
+
+footer section a:visited {
+	color:white;
+}
+
+
 footer section#last {
     border:none;
 }
@@ -266,7 +286,6 @@ footer section#last {
 .faded {
     display:none;
 }
-
 
 /* =============================================================================
    Media Queries
@@ -322,7 +341,7 @@ footer section#last {
 
 	#main article{
 		float:left;
-		width:70%;
+		width:65%;
 	}
 		
 	#main aside{
@@ -338,7 +357,8 @@ footer section#last {
    =============== */
 
 	.wrapper{
-		width:900px; /* 1140px - 10% for margins */
+		width:1000px; /* 1140px - 10% for margins */
+		min-width:1000px;
 		margin:0 auto;
 	}
 }
@@ -374,4 +394,14 @@ footer section#last {
   @page { margin: 0.5cm; }
   p, h2, h3 { orphans: 3; widows: 3; }
   h2, h3 { page-break-after: avoid; }
+}
+
+.partners {
+	text-align: right;
+	font-size: 90%;
+}
+
+.partners a {
+	margin-left: 10px;
+	text-decoration: none;
 }
